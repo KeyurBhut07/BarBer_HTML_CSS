@@ -1,0 +1,507 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins:ital,wght@0,300;1,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins:ital,wght@0,300;1,100&display=swap');
+
+html{
+    scroll-behavior: smooth;
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+
+#baner{
+    background-image: linear-gradient(rgba(0,0,0,0.5),#009688),url(../img/banner.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+
+}
+
+.logo{
+    width: 150px;
+    position: absolute;
+    top: 3%;
+    left: 5%;
+}
+
+.banner-text{
+    text-align: center;
+    color: aliceblue;
+    padding-top: 250px;
+}
+
+.banner-text h1{
+    font-size: 130px;
+    font-family: 'Kaushan Script', cursive;
+
+}
+
+.banner-text p{
+    font-size: 20px;
+    color:whitesmoke;
+    font-style: italic;
+    font-weight: bolder;
+}
+
+.btn{
+    margin: 50px auto 0;
+}
+
+.btn a{
+    width: 150px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    display: inline-block;
+    margin: 0 10px;
+    padding: 12px 0;
+    border: 3px solid beige;
+    border-radius: 120px; 
+    position: relative; 
+    z-index: 1;  
+    transition: color 1s;
+}
+
+.btn a span{
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    border-radius: 120px; 
+    background: white;
+    z-index: -1;
+    transition: 1s;
+}
+
+.btn a:hover span{
+    width: 100%;
+}
+
+.btn a:hover{
+    color: rgb(24, 49, 47);
+    font-weight: bold;
+}
+
+#navigation{
+    width: 200px;
+    height: 100vh;
+    position: fixed;
+    right: -200px;
+    top: 0px;
+    background: #009688;
+    z-index: 2;
+    transition: 0.5s;
+}
+
+nav ul li{
+    list-style: none;
+    margin: 50px 30px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: aliceblue;
+    font-weight: 900;
+}
+
+#menubtn{
+    width: 50px;
+    height: 50px;
+    background: #009688;
+    text-align: center;
+    position: fixed;
+    right: 30px;
+    top: 20px;
+    cursor: pointer;
+    z-index: 3;
+    border-radius: 3px;
+}
+
+#menubtn img{
+    width: 20px;
+    margin: 15px;
+}
+@media screen and (max-width:770px)
+{
+    .banner-text h1{
+        font-size: 44px;
+    }
+    .btn a{
+        display: block;
+        margin: 20px auto;
+    } 
+    #menubtn img{
+        width: 20px;
+        margin:15px;
+        display: block;
+    } 
+}
+
+
+/* Feature*/
+#fea{
+    width: 100%;
+    padding: 70px 0;
+}
+
+.tt{
+    text-align: center;
+    padding-bottom: 70px;
+}
+
+.tt p{
+    margin: auto;
+    font-size: 20px;
+    color: #009688;
+    z-index: 1;
+    position: relative;
+    display: inline-block;
+}
+
+.tt p::after{
+    content: '';
+    width: 50px;
+    height: 35px;
+    background: linear-gradient(#019578,#fff);
+    position:absolute ;
+    top: -20px;
+    left: 0%;
+    z-index: -1;
+    transform: rotate(10deg);
+    border-top-left-radius:35px ;
+    border-bottom-right-radius: 35px;
+}
+
+.tt h1{
+    font-size: 50px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.fbox{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+}
+
+.fb2{
+    flex-basis: 50%;
+}
+
+.fb2 h1{
+    text-align: left;
+    font-size: 25px;
+    margin-bottom: 10px;
+    font-weight: 200;
+    color: #009688;
+}
+
+.fe-desc{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.fe-img{
+    flex-basis: 50%;
+    margin: auto;
+}
+
+.fe-img img{
+    width: 500px;
+    border-radius: 15px;
+    height: 500px;
+    text-align: center;
+    margin:0% 35%;
+    margin-bottom:2.5%;
+}
+
+.fe-text p{
+    text-align: initial ;
+    font-weight: 100;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+@media screen and (max-width:770px)
+{
+    .tt h1{
+        font-size: 35px;
+        font-family: 'Poppins', sans-serif;
+    }
+    .fe-img{
+        flex-basis: 50%;
+        margin: auto;
+    }
+    .fe-img img{
+        width: 180px;
+        border-radius: 15px;
+        height: 300px;
+        text-align: center;
+        margin:2% 25%;
+    }
+    .fb2{
+        flex-basis: 100%;
+    }
+}
+
+/*Feature*/
+
+/*SERVICES*/
+
+#service{
+    width: 100%;
+    padding: 70px 0;
+    background: #efefef;
+}
+
+.s-box{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: auto;
+}
+
+.s-service{
+    flex-basis: 48%;
+    text-align: center;
+    margin-bottom: 25px;
+    color: white;
+    position: relative;
+}
+
+.s-service img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    border-radius: 10px;
+    cursor: pointer;
+    background: linear-gradient(rgba(0,0,0,0.5),#009688);
+    opacity: 0;
+    transition: 1s;
+}
+.s-service:hover .overlay{
+    opacity: 1;
+}
+
+.s-desc{
+    width: 80%;
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    transform: translate(-50%);
+    font-family: 'Poppins', sans-serif;
+    opacity: 0;
+    transition: 2.5s;
+
+}
+hr{
+    background: white;
+    height: 2px;
+    border:0;
+    margin: 15px auto;
+    width: 60%;
+}
+
+.s-desc p{
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.s-service:hover .s-desc{
+    bottom: 40%;
+    opacity: 1;
+}
+
+@media screen and (max-width:770px)
+{
+    .s-service{
+        flex-basis: 100%;
+        margin-bottom: 15%;
+    }
+    .s-desc{
+        width: 80%;
+        position: absolute;
+        bottom: 0%;
+        left: 50%;
+        transform: translate(-50%);
+        font-family: 'Poppins', sans-serif;
+        opacity: 0;
+        transition: 1.5s;
+    }
+    .s-desc p{
+        font-size: 12px;
+    }
+    hr{
+        margin: 5px auto;
+    }
+    .s-service:hover .s-desc{
+        bottom: 25% !important;
+    }
+
+}
+
+/*SERVICES*/
+
+
+/*Feedback*/
+
+#feedback{
+    width: 100%;
+    padding: 70px 0;
+}
+
+.feedback-row{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.feedback-col{
+    flex-basis: 28%;
+    padding: 10px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    box-shadow:0px 10px 20px 3px rgb(110, 168, 163);
+    cursor: pointer;
+    transition: 0.5s;
+}
+.feedback-col p{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 100;
+    text-align: justify;
+    font-size: 15px;
+}
+
+.user{
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.user img{
+    width: 60px;
+    margin-right: 20px;
+    border-radius: 5px;
+}
+
+.u-info .fa{
+    margin-left: 10px;
+    color:#27c0ff;
+}
+
+.u-info h3{
+    font-family: 'Poppins', sans-serif;
+    font-weight:bold;
+}
+
+.u-info small{
+    color: #009688;
+    font-family: 'Poppins', sans-serif;
+    font-weight:bold;
+} 
+
+.feedback-col:hover{
+    transform: translateY(-10px);
+}
+
+@media screen and (max-width:770px)
+{
+    .feedback-col
+    {
+        flex-basis: 100%;
+    }
+}
+/*Feedback*/
+
+
+/*FIOOTER*/
+
+#footer{
+    padding: 100px 0 20px;
+    background: #efefef;
+}
+
+.f-row{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-family:  'Poppins', sans-serif;
+}
+
+.f-left , .f-right{
+    flex-basis: 45%;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.f-right{
+    text-align: right;
+}
+
+.f-row h1{
+    margin: 13px 0;
+}
+
+.f-row p{
+    line-height: 40px;
+}
+
+.f-row .fa{
+    color: #009688;
+}
+
+.social{
+    text-align: center;
+}
+
+.social .fa{
+    border: 1px solid #009688;
+    height: 40px;
+    width: 40px;
+    font-size: 20px;
+    line-height: 40px;
+    color: #009688;
+    margin:10px;
+    margin-top: 40px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.social .fa:hover{
+    background-color: #009688;
+    color: #efefef;
+    transform: translateY(-10px);
+}
+
+.social p{
+    font-size: 12px;
+    font-weight: bold;
+    margin-top: 7px;
+}
+
+@media screen and (max-width:770px)
+{
+    .f-left , .f-right{
+        flex-basis: 100%;
+        font-size: 13.8px;
+    }
+ 
+}
+
+/*Footer*/
